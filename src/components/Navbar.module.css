@@ -1,6 +1,4 @@
 .header {
-    /* background-color: #ffffff; */
-    /* position: fixed; */
     width: 100%;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
     z-index: 12;
@@ -88,7 +86,7 @@
 }
 .counter {
     position: absolute;
-    top: 36px;
+    top: 17px;
     right: -5px;
     background-color: #654efe;
     border-radius: 50%;
@@ -131,7 +129,10 @@
 .userLock {
     font-size: 18px;
 }
-
+.loginUl a {
+    display: flex;
+    align-items: center;
+}
 @media (max-width: 540px) {
     .login {
         background-color: #ffffff;
@@ -152,8 +153,11 @@
         display: flex;
         justify-content: space-around;
         padding-right: 1rem;
+        margin-left: 1rem;
+        flex-wrap:wrap-reverse;
         align-items: center;
         width: 12rem;
+        min-width: 7rem;
     }
     .counter {
         top: 15px;

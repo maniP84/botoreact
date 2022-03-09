@@ -55,7 +55,7 @@ const Navbar = () => {
                 <div className={styles.desktop}>
                     <ul className={styles.loginUl}>
                         <li><button className={styles.button}>ورود و ثبت نام    <i className={`${styles.userLock} fal fa-user-lock`}></i></button></li>
-                        <li className={styles.counterContainer}><i className={`${styles.shopIcon} fal fa-shopping-bag`}></i><div className={styles.counter}><span>{cart.state.selectedItem.length}</span></div></li>
+                        <Link to="/cart"><li className={styles.counterContainer}><i className={`${styles.shopIcon} fal fa-shopping-bag`}></i><div className={styles.counter}><span>{cart.state.selectedItem.length}</span></div></li></Link>
                     </ul>
                     <div className={styles.rightSide}>
                         <ul className={styles.products} ref={ul}>
@@ -77,7 +77,7 @@ const Navbar = () => {
                         <img src='https://www.botostart.ir/wp-content/uploads/2021/03/Component-93.svg' alt='botostartLogo'/>
                     </div>
                     <div className={styles.icons}>
-                        <div className={styles.counterContainer}><i className={`${styles.shopIcon} fal fa-shopping-bag`}></i><div className={styles.counter}><span>{cart.state.selectedItem.length}</span></div></div>
+                        <Link to="/cart"><div className={styles.counterContainer}><i className={`${styles.shopIcon} fal fa-shopping-bag`}></i><div className={styles.counter}><span>{cart.state.selectedItem.length}</span></div></div></Link>
                         <i className={`fal fa-user-lock ${styles.shopIcon}`}></i>
                         <i onClick={navbarHandler} className={`fal fa-bars ${styles.bars}`}></i>
                     </div>

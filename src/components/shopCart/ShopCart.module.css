@@ -165,26 +165,28 @@
     }
     .discount {
         /* display: flex; */
-        width: 20rem;
+        /* width: 20rem; */
+        width: 100%;
         justify-content: left;
         flex-direction: column-reverse;
         
     }
     .discount div {
-        width: 18rem;
-        width: 77%;
-        width: 80%;
+        justify-content: left;
+        width:max-content;
+        width: 100%;
         
     }
     .discount input {
-        width: 10rem;
+        width: 70%;
     }
-    .discount p {
-        margin-top: 1rem;
-
+    .pInput {
+        width: 5rem;
+        
     }
     .comeBack {
-        width: 10rem;
+        margin-top: 1rem;
+        /* width: 7rem; */
     }
     .checkout {
         width: 77%;

@@ -46,7 +46,7 @@ const ShopCart = () => {
                         <p className={styles.comeBack}>برگشت به فروشگاه</p>
                         <div>
                             <input type="text" placeholder="کد تخفیف"/>
-                            <p>اجرای کوپن</p>
+                            <p className={styles.pInput}>اجرای کوپن</p>
                         </div>
                     </div>
                 </div>
