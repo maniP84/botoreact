@@ -1,0 +1,162 @@
+.container {
+    /* display: flex; */
+    justify-content: center;
+    margin-top: 4rem;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.Articles {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.articlesContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.container h4 {
+    font-size: 24px;
+}
+.allArticles {
+    display: flex;
+    justify-content: center;
+}
+
+.reactArticles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 23rem;
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 4;
+    margin-bottom: -1rem;
+    margin-top: 3rem;
+   background-image: url(../assets/Images/reactjs-components_6093.jpg);
+}
+
+.reactArticles:nth-child(1) {
+    background-image: url(../assets/Images/react-410x259.jpg);
+
+}
+/* .reactArticles:nth-child(3) {
+    width: 49rem;
+    height: 30rem;
+    display: flex;
+    text-align: right;
+    justify-content:right;
+    align-items: center;
+    margin-left: 3rem;
+} */
+.nodeContainer{
+    background-image: url(../assets/Images/Frame-1338.png);
+    width: 49rem;
+    height: 32rem;
+    display: flex;
+    text-align: right;
+    justify-content:right;
+    align-items: center;
+    margin-left: 2rem;
+}
+.bestLibraries {
+    position: relative;
+    flex-direction: column;
+    text-align: right;
+    justify-content:right;
+    color: #ffffff;
+    /* padding-right: -6rem; */
+    margin-left: 5rem;
+    padding-top: 6rem;
+    transition: all .5s ease;
+    /* z-index: 10; */
+}
+.bestLibraries h3 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 8px 9px;
+    font-size: 13px;
+    display: inline-block;
+    background-color:#0000005c;
+    border-radius: 5px;
+}
+.bestLibraries h5 {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    transition: all .5s ease;
+}
+
+.nodeArticle {
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 17rem;
+    margin-right: -2rem;
+    justify-content:center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 20%);
+    transition: all .5s ease;
+
+}
+.nodeArticle li {
+    list-style: #6e2783;
+    direction: rtl;
+    font-size: 18px;
+}
+
+.nodeArticle h5 {
+    font-size: 20px;
+    margin:0;
+    margin-bottom: 1rem;
+    direction:rtl;
+}
+@media (max-width: 540px) {
+    .reactArticles {
+        height: 15rem;
+        width: 22rem;
+        color: red;
+    }
+    .nodeContainer {
+        width: 22rem;
+        height: 15rem;
+        display: flex;
+        margin: 0;
+        background-image: url(../assets/Images/Frame-1338-820x548.png);
+    }
+    .articlesContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .nodeArticle {
+        margin: 0;
+        margin-top: 6rem;
+        background-color: transparent;
+        box-shadow: 0 0 ;
+        color: #000;
+    }
+    .nodeArticle h5 {
+        font-size: 16px;
+        color: #ffffff;
+    }
+    .bestLibraries {
+        padding-top: 8rem;
+    }
+}

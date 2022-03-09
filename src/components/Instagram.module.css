@@ -1,0 +1,118 @@
+.container {
+    justify-content: center;
+    margin-top: 7rem;
+    -webkit-tap-highlight-color: transparent;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+.container a {
+    text-decoration: none;
+    color: #654FEF;
+}
+.instagramContainer {
+    margin-top: 2rem;
+    justify-content: center;
+    width: 73.75rem;
+    height: 25rem;
+    overflow: scroll;
+    background-color: #ffffff;
+    /* direction: rtl; */
+}
+.myPage {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+}
+.page {
+    display: flex;
+    width: fit-content;
+    justify-content: left;
+    cursor: pointer;
+    padding: 5px;
+}
+.page::-webkit-scrollbar{
+    direction:rtl; 
+    
+}
+.page p {
+    
+    padding-left: 0.7rem;
+    display: inline;
+    font-size: 16px;
+}
+
+.logoContainer {
+    position: relative;
+    width: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.125rem;
+    border-radius: 40px;
+    background-image: url(../assets/Images/IMG_20210326_175631_037.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundColor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: rgba(0,0,0,.75);
+    transition: all 0.5s ease;
+    
+    opacity: 0;
+}
+.logoContainer i {
+    font-size: 24px;
+    color: #ffffff;
+    z-index: 10;
+    transition: all 0.5s ease;
+    opacity: 0;
+    
+}
+.postContainer {
+    display: grid;
+    grid-template-columns: 278px 278px 278px 278px;
+    grid-column-gap: .7rem;
+}
+.followContainer {
+    display: flex;
+    justify-content: center;
+}
+.follow {
+    background-color: #408bd1;
+    color: #ffffff;
+    border: none;
+    padding: 7px 14px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.loadMore {
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 7px 14px;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+@media (max-width: 540px) {
+    .instagramContainer {
+        margin-top: 2rem;
+        border-radius: 20px;
+    }
+    .postContainer {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 278px;
+        grid-column-gap: .7rem;
+    }
+}

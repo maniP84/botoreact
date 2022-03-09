@@ -1,0 +1,217 @@
+.header {
+    /* background-color: #ffffff; */
+    /* position: fixed; */
+    width: 100%;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
+    z-index: 12;
+    height: 4rem;
+    -webkit-tap-highlight-color: transparent;
+
+}
+.mobile {
+    display: none;
+}
+.header a {
+    text-decoration: none;
+}
+.login a {
+    color: #000;
+}
+.desktop {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    /* align-items: center; */
+    z-index: 1000;
+}
+.rightSide {
+    display: flex;
+    margin-right: 14rem;
+
+    
+}
+.imgContainer {
+    width: fit-content;
+}
+
+.login img {
+    width: 4.3rem;
+    margin-right: 8rem;
+    padding: 7px 0 10px 63px;
+}    
+.login ul {
+    display: flex;
+    width: fit-content;
+    list-style: none;
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
+.login li {
+    display: flex;
+    align-items: center;
+}
+.loginUl {
+    margin-left: 19rem;
+
+}
+.loginUl li {
+    margin-left: 1.5rem;
+}
+
+.button {
+    font-family: iranyekan;
+    border: none;
+    color: #ffffff;
+    background-image: linear-gradient(300deg, #654fef, #8E2DE2);
+    width: 9rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.shopIcon {
+    font-weight: inherit !important;
+    font-size: 30px;
+    color:#654fef;
+}
+.counterContainer {
+    position: relative;
+}
+.counter {
+    position: absolute;
+    top: 36px;
+    right: -5px;
+    background-color: #654efe;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.products {
+    line-height: 16px;
+    /* font-weight: 700; */
+    font-size: 14px;
+    /* padding-left: 12rem; */
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.productsLi {
+    padding: 0px 12px;
+    transition: all .3s ease;
+    user-select: none;
+}
+.productsLi:last-child {
+    margin-top: 0.7rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 12px;
+    transition: all .3s ease;
+    /* border-bottom: 4px solid #654fef; */
+}
+.productsLi:hover {
+    color: #654fef;
+}
+.userLock {
+    font-size: 18px;
+}
+
+@media (max-width: 540px) {
+    .login {
+        background-color: #ffffff;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 12;
+    }
+    .desktop{
+        display: none;
+    }
+    .shopIcon {
+        font-size: 23px;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 1rem;
+        align-items: center;
+        width: 12rem;
+    }
+    .counter {
+        top: 15px;
+    }
+    .mobile {
+        display: block;
+    }
+    .bars{
+        font-size: 20px;
+        font-weight:400;
+    }
+    .navbarContainer {
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        z-index: 15;
+        width: 100%;
+        height: 100%;
+        direction: rtl;
+        display: flex;
+        pointer-events: none;
+    }
+    .navbar {
+        transform: translateX(23.5rem);
+        background-color: rgba(101,79,239,.9);
+        transition: .5s ease;
+        /* padding: 12px 20px; */
+        justify-content: right;
+        list-style: none;
+        direction: rtl;
+        width: 23.5rem;
+    }
+    .navbar ul {
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 2rem;
+        border-bottom: 2px #ffffff solid;
+        list-style: none;
+    }
+    .navbar a {
+        color: #ffffff;
+    }
+    .dark {
+        background-color: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100%;
+        transition: .5s ease;
+        /* opacity: 0; */
+        float: left;
+        display: flex;
+        justify-content: left;
+        transform: translateX(-100%);
+        pointer-events: none;
+    }
+    .iconContainer {
+        padding: 2rem;
+    }
+    .iconContainer i {
+        font-size: 30px;
+        padding-left: 1rem;
+    }
+}

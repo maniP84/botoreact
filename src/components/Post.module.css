@@ -1,0 +1,7 @@
+.container svg {
+    display: inline;
+}
+.container img {
+    width: 17.375rem;
+    padding: 5px;
+}

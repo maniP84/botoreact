@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.addressContainer {
+    direction: rtl;
+}
+.centerDiv {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 70px #ffffff solid;
+    width: 75rem;
+}
+
+.addressContainer h4 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.addressIconContainer {
+    font-size: 14px;
+}
+
+.addressIconContainer i {
+    color: #9AA6B1;
+    padding-left: 1.25rem;
+    font-size: 23px;
+    bottom: 0;
+}
+.addressIconContainer p {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+
+.iconContainer {
+    display: flex;
+    justify-content: left;
+    margin-top: 3rem;
+}
+.iconContainer i {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 75px;
+    margin-left: 0.4rem;
+    background-color: #654fef;
+    transition: all .5s ease-in-out;
+    font-size: 25px;
+}
+.iconContainer i:hover {
+    background-color:#735fef ;
+}
+
+.sendEmail {
+    direction: rtl;
+}
+.sendEmail h3 {
+    color: #654fef;
+    font-size: 22px;
+    font-weight: 100;
+}
+.sendEmail div {
+    display: flex;
+    flex-direction: column;
+}
+.sendEmail label {
+    font-size: 18px;
+    color: #6c757d;
+    padding-bottom: 0.5rem;
+}
+.sendEmail input {
+    width: 33.5rem;
+    height: 1.62rem;
+    padding: 12px;
+    border-radius: 10px;
+    color: #6c757d;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-bottom: 1.7rem;
+}
+
+.sendEmail textarea {
+    height: 11rem;
+    width: 33.5rem;
+    padding: 12px;
+    border-radius: 10px;
+    color: #6c757d;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    resize:vertical;
+}
+.sendEmail span {
+    color: red;
+    padding-right: 5px;
+}
+
+.sendEmail button {
+    display: flex;
+    font-family: iranyekan;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #654fef;
+    border: none;
+    width: 5rem;
+    height: 3.62rem;
+    padding: 12px;
+    margin-top: 3rem;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin-bottom: 3rem;
+}
+.sendEmail button:hover {
+    background-color: #8e2de2;
+}
+
+@media (max-width: 540px) {
+    .container {
+        padding: 0 20px;
+    }
+    .centerDiv {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .iconContainer {
+        justify-content: center;
+    }
+    .sendEmail {
+        justify-content: center;
+    }
+    .sendEmail label {
+        /* direction: ; */
+    }
+    .sendEmail input {
+        /* width: 19rem; */
+        width: 90%;
+    }
+    .sendEmail textarea {
+        /* width: 19rem; */
+        width: 90%;
+    }
+}
