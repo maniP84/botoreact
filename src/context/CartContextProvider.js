@@ -50,13 +50,11 @@ const CartContextProvider = ({children}) => {
     
     const [state, dispatch] = useReducer(shopReducer, initialState)
     const local = localStorage.getItem("cart")
-    // useEffect(() => {
         if(local) {
             state.selectedItem = JSON.parse(local)
             console.log(JSON.parse(local))
             console.log(state.selectedItem)
         }
-    // },[])
 
     return (
         <CartContext.Provider value={{state, dispatch}}>
