@@ -64,6 +64,7 @@
 .sendEmail h3 {
     color: #654fef;
     font-size: 22px;
+    margin-top: 1rem;
     font-weight: 100;
 }
 .sendEmail div {
@@ -74,6 +75,11 @@
     font-size: 18px;
     color: #6c757d;
     padding-bottom: 0.5rem;
+    margin: 0.8rem 0 0.8rem;
+}
+.sendEmail p {
+    margin: 0.8rem 0 0.8rem;
+
 }
 .sendEmail input {
     width: 33.5rem;
@@ -85,6 +91,7 @@
     border: none;
     outline: none;
     margin-bottom: 1.7rem;
+    box-sizing: content-box;
 }
 
 .sendEmail textarea {

@@ -49,6 +49,7 @@
     padding: 30px;
     border-radius: 12px;
     background-color: #ffffff;
+    box-sizing:content-box;
 }
 .checkout div {
     display: flex;
@@ -56,6 +57,7 @@
     justify-content: space-between;
     color: #888888;
     font-size: 15px;
+    padding: 1rem 0 1rem;
     border-bottom: 1px solid #eaeaea;
 }
 
@@ -63,7 +65,7 @@
     font-family: iranyekan;
     background-color: #43f061;
     width: 100%;
-    padding: 10px 17px;
+    padding: 15px 17px;
     color: #ffffff;
     font-size: 14px;
     border: none;
@@ -75,6 +77,8 @@
 } */
 .checkout h3 {
     margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 23px;
 }
 
 .cart {
@@ -83,6 +87,8 @@
     border-radius: 12px;
     padding: 30px;
     margin-left: 2rem;
+    padding-bottom: 1rem;
+    box-sizing: content-box;
 }
 .titles {
     display: flex;
@@ -155,12 +161,14 @@
         flex-direction: column-reverse;
         align-items: center;
     }
+    
     .titles {
         display: none;
     }
     .cart {
         width: 77%;
         margin: 0;
+        
         margin-bottom: 2rem;
     }
     .discount {
@@ -181,7 +189,7 @@
         width: 70%;
     }
     .pInput {
-        width: 5rem;
+        width: 6rem;
         
     }
     .comeBack {

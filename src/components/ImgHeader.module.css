@@ -13,15 +13,16 @@
     -webkit-tap-highlight-color: transparent;
 }
 .imgDiv {
-    /* display:flex; */
-    /* margin-top: 5rem; */
     padding-top: 9rem;
+    box-sizing: content-box;
     flex-direction: column;
     justify-content:right;
     margin-right: 15rem;
+    margin-top: 4rem;
     text-align: right;
     
 }  
+
 .imgContainer button {
     font-family: iranyekan;
     border: none;
@@ -34,12 +35,17 @@
     transition: all 0.2s ease-in !important;
     cursor: pointer;   
     width: 12rem;
+    padding: 0 0 20px;
+    
 }  
 .imgContainer h5:first-child {
+    padding: 0 0 20px;
     font-size: 29px;
     text-align: right;
 }
 .imgContainer h4{
+    padding: 0 0 20px;
+    ;
     margin-top: 0;
     font-size: 18px;
     color: #464749;
