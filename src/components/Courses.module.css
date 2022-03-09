@@ -1,13 +1,18 @@
-.courseContainer {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-column-gap: 5.7rem;
-    grid-row-gap: 2rem;
-    justify-content: center;
-    margin-top: 1rem;
+.container {
     -webkit-tap-highlight-color: transparent;
 
 }
+.courseContainer {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-column-gap: 6.7rem;
+    grid-row-gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
 .courses {
     display: flex;
     justify-content: center;
@@ -15,6 +20,9 @@
     padding-top: 7rem;
 }
 
+.courses h3 {
+    font-size: 25px;
+}
 @media (max-width: 540px) {
     .courseContainer {
         align-items: center;

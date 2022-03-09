@@ -16,7 +16,6 @@ const shopReducer = (state, action) => {
                 })
                 localStorage.setItem("cart", JSON.stringify(state.selectedItem))
             
-                console.log(state)
             } 
 
             return {
@@ -52,8 +51,6 @@ const CartContextProvider = ({children}) => {
     const local = localStorage.getItem("cart")
         if(local) {
             state.selectedItem = JSON.parse(local)
-            console.log(JSON.parse(local))
-            console.log(state.selectedItem)
         }
 
     return (

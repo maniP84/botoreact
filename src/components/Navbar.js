@@ -9,19 +9,19 @@ const Navbar = () => {
     const ul = useRef()
     const Mnavbar = useRef()
     const liClickHandler = (event) => {
-        // event.preventDefault();
         const li =  [...ul.current.children]
-        blur.current.style.display="none"
+        blur.current.style.transform="translateX(-100%)"
+        blur.current.style.pointerEvents= "none"
         Mnavbar.current.style.transform="translateX(23.5rem)"
         Mnavbar.current.style.pointerEvents= "none"
 
-        li.forEach((item) => {
-            item.style.borderBottom = "0px solid #654fef"
-        })
-        if(!event.target.parentElement.length) {
+        console.log(event)
+        if(event.target.parentElement.getAttribute("href") ) {
+            li.forEach((item) => {
+                item.style.borderBottom = "0px solid #654fef"
+            })
             event.target.parentElement.style.borderBottom= "4px solid #654fef"
         }
-        console.log(event.target.parentElement.length)
         
     }
     
@@ -29,28 +29,21 @@ const Navbar = () => {
         const href =  [...ul.current.children]
         href.forEach((item) => {
             if (item.getAttribute("href") === window.location.pathname) {
-                console.log(item)
-                item.style.borderBottom= "4px solid #654fef"
+                item.style.borderBottom= "4px solid #655fef"
             }
         })
-        // console.log(ul.current.children[1])
-        console.log(window.location.pathname)
-        console.log([...ul.current.children])
 
     })
     const navbarHandler = () => {
-        // blur.current.style.opacity="1"
         blur.current.style.transform="translateX(0)"
         blur.current.style.pointerEvents= "all"
         Mnavbar.current.style.transform="translateX(0rem)"
         Mnavbar.current.style.pointerEvents= "all"
-        console.log("siejreokj")
     }
     const disappear = () => {
-        // blur.current.style.opacity="0"
         blur.current.style.transform="translateX(-100%)"
         blur.current.style.pointerEvents= "none"
-        Mnavbar.current.style.transform="translateX(23.5rem)"
+        Mnavbar.current.style.transform="translateX(24.5rem)"
         Mnavbar.current.style.pointerEvents= "none"
         
     }

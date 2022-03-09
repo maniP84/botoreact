@@ -372,10 +372,7 @@
        width: 5rem;
    }
    .priceContainer:nth-child(2) {
-        display: block;
-    }
-    .detailsContainer {
-        /* width: 15rem; */
+        display: flex;
     }
     .flexContainer {
         display: block;

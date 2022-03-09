@@ -40,9 +40,7 @@ const Articles = () => {
 
     return (
         <div className={styles.container}>
-            {/* <div className={styles.Articles}> */}
                 <h4 className={styles.Articles}>مقالات برنامه نویسی</h4>
-            {/* </div> */}
             <div className={styles.articlesContainer}>
                 <div>
                     <div onMouseOver={mouseOver} onMouseLeave={mouseLeave} className={styles.reactArticles}>

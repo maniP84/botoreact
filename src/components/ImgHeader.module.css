@@ -6,7 +6,7 @@
     /* height: 64%; */
     height: 37rem;
     /* margin-top: 2rem; */
-    background-image: url(../assets/Images/Sample-10-3.png);
+    background-image: url(../assets/Images/Sample-10-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 70px solid #ffffff ;
@@ -49,7 +49,7 @@
     .imgContainer {
         top: 0;
         height: 45vh;
-        background-image: url(../assets/Images/mobile-background-1.png);
+        background-image: url(../assets/Images/mobile-background-1.jpg);
         max-width: 100%;
         background-size: cover;
     }

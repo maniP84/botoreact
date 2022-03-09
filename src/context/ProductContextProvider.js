@@ -2,19 +2,19 @@ import React,{ useState,createContext } from 'react';
 
 
 //img
-import sass from "../assets/Images/SASS-500x286.png"
-import react from "../assets/Images/Component-47-3-1-1-1-500x286.png"
-import git from "../assets/Images/Component-49-1-1-1-500x286.png"
-import javaScript from "../assets/Images/javascript-500x286.png"
-import html from "../assets/Images/Html_Css-500x286.png"
-import mobile from "../assets/Images/mobilefirst-500x286.png"
+import sass from "../assets/Images/SASS-500x286.jpg"
+import react from "../assets/Images/Component-47-3-1-1-1-500x286.jpg"
+import git from "../assets/Images/Component-49-1-1-1-500x286.jpg"
+import javaScript from "../assets/Images/javascript-500x286.jpg"
+import html from "../assets/Images/Html_Css-500x286.jpg"
+import mobile from "../assets/Images/mobilefirst-500x286.jpg"
 //video
 import htmlV from "../assets/videos/آموزش HTML&CSS - مقدماتی تا پیشرفته - بوتواستارت.mp4"
 import reactV from "../assets/videos/آموزش ریکت و ریداکس - دوره پروژه محور React JS - بوتواستارت.mp4"
 import mobileV from "../assets/videos/آموزش mobile first design - ;جامع و رایگان - بوتواستارت.mp4"
 import sassV from "../assets/videos/آموزش SASS - کامل و رایگان - بوتواستارت.mp4"
-import JS from "../assets/Images/javascript.png"
-import GIT from "../assets/Images/Component-49-1-1-1.png"
+import JS from "../assets/Images/javascript.jpg"
+import GIT from "../assets/Images/Component-49-1-1-1.jpg"
 
 export const ProductsContext = createContext();
 
