@@ -19,6 +19,10 @@
     background-color: #ffffff;
     width: 72.5rem;
 }
+.filtersContainer,
+.filtersContainer * {
+   box-sizing: content-box;
+}
 .opacityContainer {
     position: absolute;
     opacity: 0;

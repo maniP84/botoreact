@@ -65,12 +65,11 @@
 .priceContainer i {
     color: black;
 }
-.buy {
+/* .buy {
     background-color: #43f061;
     color: #ffffff;
     width: 16.625rem;
-    /* height: 3.125rem; */
-    box-sizing: unset;
+    box-sizing: content-box;
     font-size: 19px;
     border-radius: 30px;
     display:flex;
@@ -79,7 +78,9 @@
     align-items: center;
     cursor: pointer;
     margin-top: 1rem;
-}
+} */
+
+
 .buy p {
     margin: 0;
     padding-right: 4rem;
@@ -190,6 +191,7 @@
 .rightContainer * {
    box-sizing: content-box;
 }
+
 .video {
     width: 50.375rem;
 }
@@ -213,6 +215,7 @@
 .detailsContainer p {
     line-height: 2rem;
 }
+
 .chaptersContainer {
     background-color: #654fef4d;
     text-align: right;
@@ -223,6 +226,7 @@
 .episode {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction:row-reverse;
     padding: 20px 15px;
     transition: background-color .2s ease-out;
@@ -239,8 +243,29 @@
 .episodeContainer {
     color: #383838;
     display: flex;
+    align-items: center;
     justify-content: right;
 }
+.episodeContainer div  {
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.buy {
+    background-color: #43f061;
+    color: #ffffff;
+    width: 16.625rem;
+    font-size: 19px;
+    border-radius: 30px;
+    display:flex;
+    justify-content:right;
+    padding: 10px 17px;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 1rem;
+}
+
 .episodeContainer h3 {
     margin: 0;
     font-size: 16px;
@@ -282,12 +307,13 @@
 
 .title h4 {
     font-size: 16px;
-    margin: 1.5rem 0 1.5rem;
+    margin: 1rem 0 1rem;
     font-weight: bold;
 }
 .title h5 {
     font-size: 14px;
     font-weight: 100;
+    margin:1rem 0 1rem
 }
 .successfulyContainer {
     display: flex;
@@ -296,7 +322,10 @@
     padding-top: 2rem;
     /* box-sizing: content-box; */
 }
-
+.successfulyContainer,
+.successfulyContainer * {
+   box-sizing: content-box;
+}
 .successfulyContainer a {
     color: #ffffff;
 }
@@ -431,3 +460,7 @@
     }
 
 }
+
+
+
+

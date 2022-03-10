@@ -21,6 +21,7 @@
 }
 .emptyContainer p {
     font-size: 14px;
+    padding: 1rem 0 1rem;
 }
 .emptyContainer h4 {
     display: flex;
@@ -194,7 +195,6 @@
     }
     .comeBack {
         margin-top: 1rem;
-        /* width: 7rem; */
     }
     .checkout {
         width: 77%;
