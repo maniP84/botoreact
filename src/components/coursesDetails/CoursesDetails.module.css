@@ -244,7 +244,7 @@
     color: #383838;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
 }
 .episodeContainer div  {
     display:flex;
@@ -258,7 +258,7 @@
     font-size: 19px;
     border-radius: 30px;
     display:flex;
-    justify-content:right;
+    justify-content:flex-end;
     padding: 10px 17px;
     align-items: center;
     cursor: pointer;
@@ -276,7 +276,7 @@
     background-color: #8be669;
     color: #ffffff;
     font-size: 12px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     padding: 2px 6px;
